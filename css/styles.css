@@ -67,10 +67,8 @@ body {
 }
 
 .container {
-  min-width: 320px;
   padding-left: 15px;
   padding-right: 15px;
-  /* border: 1px solid tomato; */
 }
 
 @media screen and (max-width: 767px) {
@@ -707,7 +705,7 @@ body {
   height: 88px;
 }
 
-@media screen and (max-width: 797px) {
+@media screen and (max-width: 767px) {
   .customers-icon {
     width: 110px;
   }
@@ -760,23 +758,24 @@ body {
 
 /*-------Footer--------*/
 
-/* .footer {
+.footer {
   background-color: var(--typical-backgroud-color);
-  padding-bottom: 100px;
-  padding-top: 100px;
+  padding-bottom: 96px;
+  padding-top: 96px;
 }
 .footer-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
-  display: flex;
-  align-items: center;
+  /* display: flex;
+  align-items: center; */
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--first-heder-color);
   margin-bottom: 16px;
 }
+
 .footer .accent {
   color: var(--team-background-color);
 }
@@ -786,19 +785,93 @@ body {
   letter-spacing: var(--typical-letter-spacing);
   color: var(--footer-first-color);
 }
-
-.footer .container {
-  display: flex;
-  }
-.footer-wrap {
-  max-width: 264px;
-}
 .footer-soc {
   max-width: 208px;
   height: 80px;
-  margin-left: 120px;
-  margin-right: 80px;
 }
+
+@media screen and (max-width: 767px) {
+  .footer-wrap {
+    max-width: 268px;
+    margin: 0 auto;
+    margin-bottom: 72px;
+  }
+  .footer-logo {
+    width: 100%;
+    text-align: center;
+  }
+  .footer-soc {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 72px;
+  }
+  .subscribe-input {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  .subscribe-form-btn {
+    margin: 0 auto;
+  }
+  .subscribe-title {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-wrap {
+    max-width: 264px;
+  }
+  .footer-logo {
+    display: flex;
+    align-items: cent;
+  }
+  .footer .container {
+    display: flex;
+  }
+  .subscribe-input {
+    width: 264px;
+    height: 40px;
+    margin-right: 24px;
+    color: var(--text-bacground-color);
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    padding-left: 16px;
+    outline: none;
+  }
+  .footer-subscribe {
+    min-width: 453px;
+    height: 80px;
+  }
+  .subscribe-form {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer .container {
+    flex-wrap: wrap;
+    gap: 72px 24px;
+    margin-left: 108px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    padding-bottom: 100px;
+    padding-top: 100px;
+  }
+  .footer-soc {
+    margin-left: 120px;
+    margin-right: 80px;
+  }
+  .subscribe-input {
+    width: 264px;
+    height: 40px;
+  }
+}
+
 .footer-soc-media {
   font-weight: 500;
   font-size: 16px;
@@ -837,10 +910,6 @@ body {
   background-color: var(--social-second-background-color);
 }
 
-.footer-subscribe {
-  max-width: 453px;
-  height: 80px;
-}
 .subscribe-title {
   font-weight: 500;
   font-size: 16px;
@@ -849,13 +918,9 @@ body {
   color: var(--text-bacground-color);
   margin-bottom: 16px;
 }
-.subscribe-form {
-  display: flex;
-}
+
 .subscribe-input {
-  width: 264px;
   height: 40px;
-  margin-right: 24px;
   color: var(--text-bacground-color);
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -901,11 +966,11 @@ body {
   position: absolute;
   right: 24px;
   fill: var(--text-bacground-color);
-} */
+}
 
 /*-------Portfolio--------*/
 
-/* .filter {
+.filter {
   padding-top: 96px;
   padding-bottom: 120px;
 }
@@ -1012,11 +1077,11 @@ body {
   background-color: var(--first-background-color-button);
   background-blend-mode: soft-light;
   mix-blend-mode: normal;
-} */
+}
 
 /*-------Modal window--------*/
 
-/* .backdrop {
+.backdrop {
   position: fixed;
   z-index: 100;
   top: 0;
@@ -1080,11 +1145,11 @@ body {
 .modal-close:hover .modal-close-icon,
 .modal-close:focus .modal-close-icon {
   fill: var(--text-bacground-color);
-} */
+}
 
 /*-------Modal window--------*/
 
-/* .modal-form {
+.modal-form {
   display: flex;
   flex-direction: column;
 }
@@ -1224,4 +1289,4 @@ body {
 .modal-form-submit:hover,
 .modal-form-submit:focus {
   background-color: var(--second-button-color);
-} */
+}
