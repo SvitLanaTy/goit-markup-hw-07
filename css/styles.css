@@ -259,7 +259,6 @@ body {
   position: relative;
   max-width: 428px;
   height: 100%;
-  border: 1px solid tomato;
   display: flex;
   flex-direction: column;
   padding: 40px;
