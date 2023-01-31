@@ -1,0 +1,23 @@
+@media screen and (min-width: 480px) {
+  .container {
+    width: 426px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .mobile-menu-container {
+    max-width: 428px;
+  }
+  .mobile-menu-social-list {
+    gap: 56px;
+    justify-content: start;
+  }
+  .mobile-menu-tel {
+    font-weight: 600;
+    font-size: 36px;
+  }
+  /*-------Modal window--------*/
+  .modal {
+    width: 392px;
+    min-height: 584px;
+  }
+}
