@@ -114,6 +114,9 @@
   .features-iteam {
     width: calc((100% - 24px) / 2);
   }
+  .features-title {
+    text-align: left;
+  }
   /*-------Team--------*/
   .team > .container {
     width: 582px;
@@ -131,7 +134,7 @@
   }
   /*-------Customers--------*/
   .customers > .container {
-    width: 552px;
+    width: 582px;
   }
   .customers-item {
     width: calc((100% - 48px) / 3);
