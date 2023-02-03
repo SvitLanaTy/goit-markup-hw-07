@@ -72,7 +72,6 @@ body {
 .container {
   padding-left: 15px;
   padding-right: 15px;
-  /* margin: 0 auto; */
 }
 
 /*-------Header--------*/
@@ -658,26 +657,28 @@ body {
 /*-------Portfolio--------*/
 
 .filter {
-  padding-top: 96px;
-  padding-bottom: 120px;
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 .filter-list-button {
   display: flex;
-  margin-bottom: 72px;
-  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 16px;
+  row-gap: 24px;
+  justify-content: start;
+  max-width: 263px;
+  margin-bottom: 48px;
+
   align-items: center;
-  gap: 24px;
 }
 
 .filter-list-img {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 24px;
   row-gap: 48px;
 }
 
 .filter-list-img .filter-item {
-  width: calc((100% - 48px) / 3);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
@@ -701,6 +702,7 @@ body {
   font-size: var(--main-font-size);
   line-height: var(--typical-line-height);
   display: flex;
+  height: 40px;
   align-items: center;
   text-align: center;
   letter-spacing: 0.04em;
@@ -709,7 +711,7 @@ body {
   background-color: var(--team-background-color);
   border: 1px solid var(--header-border-color);
   border-radius: 4px;
-  padding: 12px 24px;
+  padding: 8px 16px;
   transition: color var(--transition), background-color var(--transition),
     border var(--transition), box-shadow var(--transition);
 }

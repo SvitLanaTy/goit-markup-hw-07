@@ -178,4 +178,29 @@
     padding-right: 24px;
     width: 408px;
   }
+  /*-------Portfolio--------*/
+  .filter {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+  .filter-button {
+    padding: 12px 24px;
+    height: 48px;
+  }
+  .filter-list-button {
+    flex-wrap: nowrap;
+    gap: 24px;
+    max-width: 586px;
+    justify-content: center;
+    margin-bottom: 64px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .filter-list-img .filter-item {
+    width: calc((100% - 24px) / 2);
+  }
+  .filter-list-img {
+    column-gap: 24px;
+    row-gap: 72px;
+  }
 }
